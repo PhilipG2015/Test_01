@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Philip</title>
+    <link type="text/css" rel="stylesheet" href="main.css"
+  </head>
+
+  <body>
+    <div container>
+      <div logo>
+	<p id="transient_color"></p>
+	<p id="menu"></p>
+	<button type="submit" data-toggle="collapse">ClickMe</button>
+      </div>
+			
+      <div>
+	<ul>
+	  <li class="nav"></li>
+	  <li class="nav"></li>
+	  <li class="nav"></li>
+	</ul>
+      </div>
+			
+    </div>
+	
+<script>
+var num=[1,2,3,4];
+
+var newnum= $.map(num,function(item,index) {
+var a=item+10;
+var msg=$('<h2></h2>');
+msg.append(a);
+ return msg;
+
+});
+
+$('body').html(newnum);
+
+
+</script>
+  </body>
+
+
+</html>
